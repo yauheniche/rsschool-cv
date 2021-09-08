@@ -1,2 +1,2 @@
 name: Homer;
-surname: Simnpson;
+surname: Simpson;
