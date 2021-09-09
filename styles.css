@@ -1,0 +1,22 @@
+body {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+header{
+	height: 100px;
+	width: 100%;
+	background-color: bisque;
+}
+main{
+	height: 400px;
+	width: 100%;
+	background-color: rosybrown;
+}
+
+.links-contaner {
+	background-color: skyblue;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
