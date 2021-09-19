@@ -1,278 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" href="./src/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./src/css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./src/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./src/css/style.css">
 
-  
-  <script src="https://kit.fontawesome.com/c2253fdbdc.js" crossorigin="anonymous"></script>
 
-  <title>Cherkas Yauheni</title>
+	<!-- <script src="https://kit.fontawesome.com/c2253fdbdc.js" crossorigin="anonymous"></script> -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<title>Cherkas Yauheni</title>
 </head>
 
 <body>
-  <header class="header bg-primary ">
-    
-    <nav class=" navbar  navbar-dark">
-      <div class="links">
-        <ul class="links-navbar navbar-nav">
-          <li class="links-navbar__item">
-            <a href="https://www.linkedin.com/in/yauheni-cherkas/" target="blanc"><i class="nav-link fab fa-linkedin"></i></a>
-            
-          </li>
-          <li class="links-navbar__item">
-            <a href="https://www.facebook.com/yauheny.cherkas" target="blanc"><i class="nav-link fab fa-facebook-square"></i></a>
-          </li>
-          <li class="links-navbar__item">
-            <a href="https://github.com/yauheniche" target="blanc"><i class="nav-link fab fa-github-alt"></i></a>
-          </li>
-          <li class="links-navbar__item">
-            <a href="mailto:cherkasyauheni.poland@gmail.com"><i class="nav-link far fa-envelope"></i></a>
-          </li>
-        </ul>
-      </div>
+	<header class="header bg-primary ">
+		
+		<nav class=" navbar  navbar-dark">
+			<div class="links">
+				<ul class="links-navbar navbar-nav">
+					<li class="links-navbar__item">
+						<a href="https://www.linkedin.com/in/yauheni-cherkas/" target="blanc"><i class="nav-link fab fa-linkedin"></i></a>
+						
+					</li>
+					<li class="links-navbar__item">
+						<a href="https://www.facebook.com/yauheny.cherkas" target="blanc"><i class="nav-link fab fa-facebook-square"></i></a>
+					</li>
+					<li class="links-navbar__item">
+						<a href="https://github.com/yauheniche" target="blanc"><i class="nav-link fab fa-github-alt"></i></a>
+					</li>
+					<li class="links-navbar__item">
+						<a href="mailto:cherkasyauheni.poland@gmail.com"><i class="nav-link far fa-envelope"></i></a>
+					</li>
+				</ul>
+			</div>
 
-      <div class="navigation" >
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contacts">Contacts</a>
-          </li>
-        </ul>
-      </div>
-            
-      <button class="navbar-toggler burger" type="button" id="burger-btn">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </nav>
+		<div class="navigation" >
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#about">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#education">Education</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#portfolio">Portfolio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contacts">Contacts</a>
+				</li>
+			</ul>
+		</div>
+				
+		<button class="navbar-toggler burger" type="button" id="burger-btn">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		</nav>
 
-    <div class="navigation-mobile hidden-nav" id="burger-menu">
-      <ul class="navbar-nav ml-auto ">
-        <li class="nav-item active">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#education">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#portfolio">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contacts">Contacts</a>
-        </li>
-      </ul>
-    </div>
+		<div class="navigation-mobile hidden-nav" id="burger-menu">
+			<ul class="navbar-nav ml-auto ">
+				<li class="nav-item active">
+					<a class="nav-link" href="#about">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#education">Education</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#portfolio">Portfolio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contacts">Contacts</a>
+				</li>
+			</ul>
+		</div>
 
-    <div class="profile-teaser" id="about">
-      <div class="container-sm d-flex">
-        <img src="./src/img/IMG_20200624_181320(2).jpg" class="profile-teaser__image" alt="photo" >
-        <div class="profile-teaser__info">
-          <p class="profile-teaser__beginning">Hello, my name is</p>
-          <h1><strong>Evgeny Cherkas</strong></h1>
-          <p>I have a civil engineer <a href="#education">education</a> but now I'm frontend developer. I like to develop in what I do, create new <a href="#">products</a> and learn new technologies for this. If you followed the link to this page it means we could work on creating your products together. Want to know how I may help your project? Check out my project <a href="#education">case studies</a>.</p>
-        <a  class="btn btn-primary" href="#contacts">Contact</a>
-        </div>
-      </div>
+		<div class="profile-teaser" id="about">
+		<div class="container-sm d-flex">
+			<img src="./src/img/img_20200624_181320(2).jpg" class="profile-teaser__image" alt="photo" >
+			<div class="profile-teaser__info">
+				<p class="profile-teaser__beginning">Hello, my name is</p>
+				<h1><strong>Evgeny Cherkas</strong></h1>
+				<p>I have a civil engineer <a href="#education">education</a> but now I'm frontend developer. I like to develop in what I do, create new products and learn new technologies for this. If you followed the link to this page it means we could work on creating your products together. Want to know how I may help your project? Check out my project <a href="#education">case studies</a>.</p>
+				<a  class="btn btn-primary" href="#contacts">Contact</a>
+			</div>
+		</div>
 
-    </div>
+		</div>
 
-  </header>
-
-  <section class="experience container-sm" id="education" >
-  
-    <h2 class="experience__title">Education way</h2>
-    
-    <div class="schedule" id="schedule">
-      <div class="schedule__stage" id="university-icon"><i class="fas fa-university"></i></div>
-      <div class="schedule__arrow"><i class="fas fa-long-arrow-alt-right"></i></div>
-      <div class="schedule__stage" id="construction-icon"><i class="fas fa-pencil-ruler"></i></div>
-      <div class="schedule__arrow"><i class="fas fa-long-arrow-alt-right"></i></div>
-      <div class="schedule__stage" ><i class="fas fa-laptop-code" id="it-icon"></i></div>
-    </div>
-
-    <div class="list-group experience__list" id="list"> 
-
-      <div class="list-group-item " id="university-item-list">
-        <div class="flex-column align-items-start">
-          <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">Belarussian National Technical University</h5>
-            <small>2010-2015</small>
-          </div>
-          <p class="mb-1">Civil engineer.</p>
-        </div>
-      </div>
-
-      <div class="list-group-item " id="construction-item-list">
-        <div class="flex-column align-items-start">
-          <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">Construction and geodesist engineer</h5>
-            <small class="text-muted">2015-2019</small>
-          </div>
-        </div>
-      </div>
-
-      <div class="list-group-item " id="it-item-list">
-        <div class="flex-column align-items-start">
-
-          <div class="list-group-item__title">
-            <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">Courses and freelance</h5>
-              <small class="text-muted">2019-2020</small>
-            </div>
-          </div>
-
-          <div class="list-group-item__row">
-            <div class="d-flex w-100 justify-content-between">
-              <p class="mb-1" ><span class="list-group-item__link"><a class="list-group-item__link" href="https://i.imgur.com/1OZRkBl.jpg" target="blanc">105-hour course of General English</a></span></p>
-              <small class="text-muted">03-09.2019</small>
-            </div>
-            <small class="link__description text-muted">Intermediate Level (CEF-B1)</small>
-          </div>
-
-          <div class="list-group-item__row">
-            <div class="d-flex w-100 justify-content-between">
-              <p class="mb-1"><span><a class="list-group-item__link" href="https://htmlacademy.ru/profile/id931829/progress" target="blanc">HTMLacademy</a></span></p>
-              <small class="text-muted">05-09.2019</small>
-            </div>
-            <small class="link__description text-muted">HTML CSS JS(basics)</small>
-          </div>
-
-          <div class="list-group-item__row">
-            <div class="d-flex w-100 justify-content-between">
-              <p class="mb-1"><span ><a class="list-group-item__link" href="https://app.rs.school/certificate/ma5w6h8h" target="blanc">Rolling Scopes School</a></span></p>
-              <small class="text-muted">09.2019-07.2020</small>
-            </div>
-            <small class="link__description text-muted">JS(ES6) SCSS Webpack Git NPM </small>
-          </div>
-
-          <div class="list-group-item__row">
-            <div class="d-flex w-100 justify-content-between">
-              <p class="mb-1"><span ><a class="list-group-item__link" href="https://www.udemy.com/course/pro-react-redux/" target="blanc">Udemi. Pro React + Redux</a></span> </p>
-              <small class="text-muted">08-10.2019</small>
-            </div>
-            <small class="link__description text-muted">React Redux</small>
-          </div> 
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <section class="portfolio" id="portfolio">
-    
-    <div class="portfolio-container container-sm">
-      
-      <h2 class="portfolio__title">Portfolio</h2>
-
-      <div class="swiper-container container-sm">
-        <div class="swiper-wrapper">
-
-          <div class="swiper-slide card mb-3">
-            <h3 class="card-header">English for kids</h3>
-            <div class="card-body description">
-              <h6 class="description__text  card-subtitle text-muted">Small application for studying. Has two modes (play, train), saves data in statistics page and use <a href="https://developer.mozilla.org/ru/docs/Web/API/Window/localStorage" target="blanc">localStorage</a></h6>
-              <div class="card-navigator">Click on image to see application</div>
-            </div>
-            <a href="https://english-for-kids-yauheniche.netlify.app/" target="blanc">
-              <img class="swiper-slide__image" src="./src/img/screenshot-efk.png" alt="Card image">
-            </a>            
-            <div class="card-body">
-              <h6>Were used:</h6>
-              <span class="badge badge-info">Javascript(ES6)</span>
-              <span class="badge badge-info">Webpack</span>
-              <span class="badge badge-info">babel</span>
-              <span class="badge badge-info">eslint</span>
-            </div>
-          </div>
-
-          <div class="swiper-slide card mb-3">
-            <h3 class="card-header">Weather app</h3>
-            <div class="card-body description">
-              <h6 class="description__text card-subtitle text-muted"> Show the weather on user area using <a href="https://ipinfo.io/" target="blanc">ipinfo</a> and 3-days forecast. Сan enter enter any city in the input manually or by voice. Use also <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API/Using_the_Web_Speech_API">Speech API</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance" target="_blank">SpeechSynthesisUtterance</a></h6>
-              <div class="card-navigator">Click on image to see application</div>
-            </div>
-            <a href="https://yauheniche-weather-app.netlify.app/" target="blanc">
-              <img class="swiper-slide__image" src="./src/img/screenshot-weather.png" alt="Card image">
-            </a>
-            <div class="card-body">
-              <h6>Were used:</h6>
-              <span class="badge badge-info">Javascript(ES6)</span>
-              <span class="badge badge-info">SCSS</span>
-              <span class="badge badge-info">Webpack</span>
-              <span class="badge badge-info">babel</span>
-            </div>
-          </div>
-
-          <div class="swiper-slide card mb-3">
-            <h3 class="card-header">Star app</h3>
-            <div class="card-body description">
-              <h6 class="description__text card-subtitle text-muted"> Show info about people, planets and starships from Star Wars universe using <a href="https://swapi.dev/" target="_blank">Star Wars API</a></h6>
-              <div class="card-navigator">Click on image to see application</div>
-            </div>
-            <a href="https://star-app.netlify.app/" target="blanc">
-              <img class="swiper-slide__image" src="./src/img/screenshot-SW.png" alt="Card image">
-            </a>
-            <div class="card-body">
-              <h6>Were used:</h6>
-              <span class="badge badge-info">React</span>
-              <span class="badge badge-info">React-router</span>
-              <span class="badge badge-info">CRA</span>
-            </div>
-          </div>
+	</header>
 
 
-        </div>
-        <div class="swiper-pagination swiper-pagination-bullets-dynamic"></div>
-      </div>
-    
-    </div>
-    
-  </section>
+	<main>
+		<section class="experience container-sm" id="education" >
 
-  <section class="contacts" id="contacts">
-    <div class="contact-intro col-lg-8 text-center" >
-			        
-      <img class="profile-small rounded-circle" src="./src/img/IMG_20200624_181320(2).jpg" alt="photo">
-      
-      <div class=" bg-white p-4 p-lg-5 shadow-sm">
-        <p class="text-left mb-3">I'm currently taking on freelance work. If you are interested in hiring me for your project please use the links below to get in touch.</p>
-        <h6 class="font-weight-bold text-center mb-3">You can also find me on the following channels</h6>
-        
-        <ul class="links-navbar navbar-nav">
-          <li class="links-navbar__item">
-            <a href="https://www.linkedin.com/in/yauheni-cherkas/" target="blanc"><i class="nav-link fab fa-linkedin"></i></a>
-            
-          </li>
-          <li class="links-navbar__item">
-            <a href="https://www.facebook.com/yauheny.cherkas" target="blanc"><i class="nav-link fab fa-facebook-square"></i></a>
-          </li>
-          <li class="links-navbar__item">
-            <a href="https://github.com/yauheniche" target="blanc"><i class="nav-link fab fa-github-alt"></i></a>
-          </li>
-          <li class="links-navbar__item">
-            <a href="mailto:cherkasyauheni.poland@gmail.com"><i class="nav-link far fa-envelope"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
+			<h2 class="experience__title">Education way</h2>
+			
+			<div class="schedule" id="schedule">
+				<div class="schedule__stage" id="university-icon">
+					<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 512 512"><path fill="currentColor" d="M496 128v16a8 8 0 0 1-8 8h-24v12c0 6.627-5.373 12-12 12H60c-6.627 0-12-5.373-12-12v-12H24a8 8 0 0 1-8-8v-16a8 8 0 0 1 4.941-7.392l232-88a7.996 7.996 0 0 1 6.118 0l232 88A8 8 0 0 1 496 128zm-24 304H40c-13.255 0-24 10.745-24 24v16a8 8 0 0 0 8 8h464a8 8 0 0 0 8-8v-16c0-13.255-10.745-24-24-24zM96 192v192H60c-6.627 0-12 5.373-12 12v20h416v-20c0-6.627-5.373-12-12-12h-36V192h-64v192h-64V192h-64v192h-64V192H96z"></path></svg>
+				</div>
+				<div class="schedule__arrow">
+					<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 448 512"><path fill="currentColor" d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"></path></svg>
+				</div>
+				<div class="schedule__stage" id="construction-icon">
+					<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 512 512"><path fill="currentColor" d="M109.46 244.04l134.58-134.56-44.12-44.12-61.68 61.68a7.919 7.919 0 0 1-11.21 0l-11.21-11.21c-3.1-3.1-3.1-8.12 0-11.21l61.68-61.68-33.64-33.65C131.47-3.1 111.39-3.1 99 9.29L9.29 99c-12.38 12.39-12.39 32.47 0 44.86l100.17 100.18zm388.47-116.8c18.76-18.76 18.75-49.17 0-67.93l-45.25-45.25c-18.76-18.76-49.18-18.76-67.95 0l-46.02 46.01 113.2 113.2 46.02-46.03zM316.08 82.71l-297 296.96L.32 487.11c-2.53 14.49 10.09 27.11 24.59 24.56l107.45-18.84L429.28 195.9 316.08 82.71zm186.63 285.43l-33.64-33.64-61.68 61.68c-3.1 3.1-8.12 3.1-11.21 0l-11.21-11.21c-3.09-3.1-3.09-8.12 0-11.21l61.68-61.68-44.14-44.14L267.93 402.5l100.21 100.2c12.39 12.39 32.47 12.39 44.86 0l89.71-89.7c12.39-12.39 12.39-32.47 0-44.86z"></path></svg>
+				</div>
+				<div class="schedule__arrow">
+					<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 448 512"><path fill="currentColor" d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"></path></svg>
+				</div>
+				<div class="schedule__stage" >
+					<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24"><path fill="currentColor" d="m12.293 22.707-2-2c-.391-.391-.391-1.023 0-1.414l2-2c.391-.391 1.023-.391 1.414 0s.391 1.023 0 1.414l-1.293 1.293 1.293 1.293c.391.391.391 1.023 0 1.414s-1.023.391-1.414 0z"/><path fill="currentColor" d="m20.293 22.707c-.391-.391-.391-1.023 0-1.414l1.293-1.293-1.293-1.293c-.391-.391-.391-1.023 0-1.414s1.023-.391 1.414 0l2 2c.391.391.391 1.023 0 1.414l-2 2c-.391.391-1.023.391-1.414 0z"/><path fill="currentColor" d="m15.684 23.949c-.523-.175-.807-.741-.632-1.265l2-6c.175-.524.736-.808 1.265-.632.523.175.807.741.632 1.265l-2 6c-.174.518-.736.808-1.265.632z"/><path fill="currentColor" d="m17.98.11c-2.59-.38-4.88.24-6.98 1.89-2.1-1.65-4.39-2.27-6.98-1.89-.87.12-1.52.87-1.52 1.73v10.97c0 .49.21.96.58 1.29.37.34.88.5 1.38.44 1.59-.18 3.13.15 4.55.96.46.25.9.56 1.33.92l.54-.54c.14-.14.3-.27.47-.38.73-.48 1.61-.61 2.43-.39.82-.36 1.69-.57 2.57-.6.72-.49 1.64-.65 2.53-.38.02-.01.03-.02.04-.03.37-.33.58-.8.58-1.29v-10.97c0-.86-.65-1.61-1.52-1.73zm.02 12.7c0 .07-.03.13-.08.17-.03.03-.09.07-.18.07-.01 0-.04 0-.04 0-2.39-.27-4.69.41-6.7 1.98-1.72-1.34-3.66-2.04-5.69-2.04-.34 0-.67.02-1.02.06-.11.01-.18-.04-.21-.07-.05-.04-.08-.1-.08-.17v-10.97c0-.12.1-.23.23-.25 2.37-.35 4.36.28 6.28 1.95.28.25.7.25.98 0 1.92-1.67 3.91-2.29 6.28-1.95.13.02.23.13.23.25z"/><path fill="currentColor" d="m11.35 15.5c-.17.11-.33.24-.47.38l-1.12 1.12h-8.01c-.96 0-1.75-.79-1.75-1.75v-11.5c0-.96.78-1.74 1.74-1.75h1.26c.41 0 .75.33.75.75 0 .41-.33.75-.75.75h-1.25c-.14 0-.25.12-.25.25v11.5c0 .14.11.25.25.25z"/><path fill="currentColor" d="m22 3.75v11.43c-.48-.17-1-.21-1.5-.12v-11.31c0-.14-.11-.25-.25-.25h-1.25c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h1.25c.96 0 1.75.79 1.75 1.75z"/><path fill="currentColor" d="m10.25 15.5v-12.5c0-.414.336-.75.75-.75s.75.336.75.75v12z"/></svg>
+				</div>
+				<div class="schedule__arrow">
+					<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 448 512"><path fill="currentColor" d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"></path></svg>
+				</div>
+				<div class="schedule__stage" >
+					<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 640 512"><path fill="currentColor" d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"></path></svg>
+				</div>
+			</div>
+	
+			<div class="list-group experience__list" id="list"> 
+	
+				<div class="list-group-item " id="university-item-list">
+					<div class="flex-column align-items-start">
+						<div class="d-flex w-100 justify-content-between">
+							<h5 class="mb-1">Belarussian National Technical University</h5>
+							<small class="text-muted">2010-2015</small>
+						</div>
+					</div>
+				</div>
+		
+				<div class="list-group-item " id="construction-item-list">
+					<div class="flex-column align-items-start">
+					<div class="d-flex w-100 justify-content-between">
+						<h5 class="mb-1">Construction and geodesist engineer</h5>
+						<small class="text-muted">2015-2019</small>
+					</div>
+					</div>
+				</div>
+		
+				<div class="list-group-item item-expand" id="it-item-list">
+					<div class="flex-column align-items-start">
+		
+						<div class="list-group-item__title">
+							<div class="d-flex w-100 justify-content-between">
+							<h5 class="mb-1">Courses and freelance</h5>
+							<small class="text-muted">2019-2020</small>
+							</div>
+						</div>
 
-    
-  
+						<div class="list-group-item__content">
+							<div class="list-group-item__row">
+								<div class="d-flex w-100 justify-content-between">
+								<p class="mb-1" ><span class="list-group-item__link"><a class="list-group-item__link" href="https://i.imgur.com/1OZRkBl.jpg" target="blanc">105-hour course of General English</a></span></p>
+								<small class="text-muted">03-09.2019</small>
+								</div>
+								<small class="description__up text-muted">Intermediate Level (CEF-B1)</small>
+							</div>
+				
+							<div class="list-group-item__row">
+								<div class="d-flex w-100 justify-content-between">
+								<p class="mb-1"><span><a class="list-group-item__link" href="https://htmlacademy.ru/profile/id931829/progress" target="blanc">HTMLacademy</a></span></p>
+								<small class="text-muted">05-09.2019</small>
+								</div>
+								<ul class="description__up list-description" >
+									<li><small class="text-muted">HTML</small></li>
+									<li><small class="text-muted">CSS </small></li>
+									<li><small class="text-muted">JS(basics)</small></li>
+								</ul>
+							</div>
+				
+							<div class="list-group-item__row">
+								<div class="d-flex w-100 justify-content-between">
+								<p class="mb-1"><span ><a class="list-group-item__link" href="https://app.rs.school/certificate/ma5w6h8h" target="blanc">Rolling Scopes School</a></span></p>
+								<small class="text-muted">09.2019-07.2020</small>
+								</div>
+								<ul class="description__up list-description" >
+									<li><small class="text-muted">JS(ES6)</small></li>
+									<li><small class="text-muted">SCSS</small></li>
+									<li><small class="text-muted">Webpack</small></li>
+									<li><small class="text-muted">Git</small></li>
+									<li><small class="text-muted">NPM</small></li>
+								</ul>
+							</div>
+				
+							<div class="list-group-item__row">
+								<div class="d-flex w-100 justify-content-between">
+								<p class="mb-1"><span ><a class="list-group-item__link" href="https://www.udemy.com/course/pro-react-redux/" target="blanc">Udemi. Pro React + Redux</a></span> </p>
+								<small class="text-muted">08-12.2020</small>
+								</div>
+								<ul class="description__up list-description" >
+									<li><small class="text-muted">React</small></li>
+									<li><small class="text-muted">Redux</small></li>
+								</ul>
+							</div> 
+						</div>
+					</div>
+				</div>
 
+				<div class="list-group-item item-expand" >
+					<div class="flex-column align-items-start">
+		
+						<div class="list-group-item__title">
+							<div class="d-flex w-100 justify-content-between">
+							<h5 class="mb-1">Frontend development</h5>
+							<small class="text-muted">2020- ...</small>
+							</div>
+						</div>
 
+						<div class="list-group-item__content">
+							<div class="list-group-item__row">
+								<div class="d-flex w-100 justify-content-between">
+								<p class="mb-1" ><span class="list-group-item__link"><a class="list-group-item__link" href="https://www.linkedin.com/company/aurora-creation/" target="blanc">Aurora Creation </a></span></p>
+								<small class="text-muted">2020- ...</small>
+								</div>
+								<small class="description__up text-muted">Frontend Web developer</small>
+							</div> 
+						</div>
+					</div>
+				</div>
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="./src/js/index.js"></script>
+			</div>
+		</section>
+	
+		<section class="portfolio" id="portfolio">
+			<div class="portfolio-container container-sm">		
+				<h2 class="portfolio__title">Portfolio and code example</h2>
+				<div class="swiper-container container-sm">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide card mb-3">
+							<h3 class="card-header">English for kids</h3>
+								<div class="card-body description">
+								<h6 class="description__text  card-subtitle text-muted">Small application for studying. Has two modes (play, train), saves data in statistics page and use <a href="https://developer.mozilla.org/ru/docs/Web/API/Window/localStorage" target="blanc">localStorage</a></h6>
+								<div class="card-navigator">Click on image to see application</div>
+							</div>
+							<a href="https://english-for-kids-yauheniche.netlify.app/" target="blanc">
+							<img class="swiper-slide__image" src="./src/img/screenshot-efk.png" alt="Card image">
+							</a>            
+							<div class="card-body">
+								<h6>Were used:</h6>
+								<ul class="list-description" >
+									<li><span class="badge badge-info">Javascript(ES6)</span></li>
+									<li><span class="badge badge-info">Webpack</span></li>
+									<li><span class="badge badge-info">babel</span></li>
+									<li><span class="badge badge-info">eslint</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="swiper-slide card mb-3">
+							<h3 class="card-header">Weather app</h3>
+							<div class="card-body description">
+								<h6 class="description__text card-subtitle text-muted"> Show the weather on user area using <a href="https://ipinfo.io/" target="blanc">ipinfo</a> and 3-days forecast. Сan enter enter any city in the input manually or by voice. Use also <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API/Using_the_Web_Speech_API">Speech API</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance" target="_blank">SpeechSynthesisUtterance</a></h6>
+								<div class="card-navigator">Click on image to see application</div>
+							</div>
+							<a href="https://yauheniche-weather-app.netlify.app/" target="blanc">
+								<img class="swiper-slide__image" src="./src/img/screenshot-weather.png" alt="Card image">
+							</a>
+							<div class="card-body">
+								<h6>Were used:</h6>
+								<ul class="list-description" >
+									<li><span class="badge badge-info">Javascript(ES6)</span></li>
+									<li><span class="badge badge-info">SCSS</span></li>
+									<li><span class="badge badge-info">Webpack</span></li>
+									<li><span class="badge badge-info">babel</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="swiper-slide card mb-3">
+							<h3 class="card-header">Star app</h3>
+							<div class="card-body description">
+								<h6 class="description__text card-subtitle text-muted"> Show info about people, planets and starships from Star Wars universe using <a href="https://swapi.dev/" target="_blank">Star Wars API</a></h6>
+								<div class="card-navigator">Click on image to see application</div>
+							</div>
+							<a href="https://star-app.netlify.app/" target="blanc">
+							<img class="swiper-slide__image" src="./src/img/screenshot-sw.png" alt="Card image">
+							</a>
+							<div class="card-body">
+								<h6>Were used:</h6>
+								<ul class="list-description" >
+									<li><span class="badge badge-info">React</span></li>
+									<li><span class="badge badge-info">React-router</span></li>
+									<li><span class="badge badge-info">CRA</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="swiper-slide card mb-3">
+							<h3 class="card-header">Code Example</h3>
+							<div class="card-body description">
+								<h6 class="description__text card-subtitle text-muted">My solution of this <a href="https://www.codewars.com/kata/56eb0be52caf798c630013c0" target="_blank">codewar's task</a> to show my code style and get 10 points for <a href="https://github.com/rolling-scopes-school/tasks/blob/master/tasks/cv/cv.md#%D0%BA%D1%80%D0%B8%D1%82%D0%B5%D1%80%D0%B8%D0%B8-%D0%BE%D1%86%D0%B5%D0%BD%D0%BA%D0%B8/" target="_blank">CV task</a> :)</h6>
+							</div>
+							<pre class="code-container">
+								<code class="code-contant">
+									function unluckyDays(year){
+										&nbsp;let res = 0;
+										&nbsp;for(let month = 0; month &lt;= lt; 11 ; month ++ ){
+											&nbsp;&nbsp;let date = new Date(year, month, 13)
+											&nbsp;&nbsp;let date = new Date(year, month, 13)
+											&nbsp;&nbsp;let date = new Date(year, month, 13)
+											&nbsp;&nbsp;date.getDay() === 5 ? res++ : true
+											&nbsp;}
+											&nbsp;return res
+									}
+								</code>
+							</pre>
+							<div class="card-body">
+								<h6>Were used:</h6>
+								<span class="badge badge-info">Javascript</span>
+							</div>
+						</div>	
+					</div>
+					<div class="swiper-pagination swiper-pagination-bullets-dynamic"></div>
+				</div>
+			</div>
+		</section>
+	
+		<section class="contacts" id="contacts">
+			<div class="contact-intro col-lg-8 text-center" >
+					
+			<img class="profile-small rounded-circle" src="./src/img/img_20200624_181320(2).jpg" alt="photo">
+			
+			<div class="container-sm bg-white p-4 p-lg-5 shadow-sm">
+				<p class="text-left mb-3">I'm currently taking on freelance work. If you are interested in hiring me for your project please use the links below to get in touch.</p>
+				<h6 class="font-weight-bold text-center mb-3">You can also find me on the following channels</h6>
+				
+				<ul class="links-navbar navbar-nav">
+					<li class="links-navbar__item">
+						<a href="https://www.linkedin.com/in/yauheni-cherkas/" target="blanc">
+							<svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+						</a>
+					</li>
+					<li class="links-navbar__item">
+						<a href="https://www.facebook.com/yauheny.cherkas" target="blanc">
+							<svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 448 512"><path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path></svg>
+						</a>
+					</li>
+					<li class="links-navbar__item">
+						<a href="https://github.com/yauheniche" target="blanc">
+							<svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 480 512"><path fill="currentColor" d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"></path></svg>
+						</a>
+					</li>
+					<li class="links-navbar__item">
+						<a href="mailto:cherkasyauheni.poland@gmail.com">
+							<svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 512 512"><path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"></path></svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer-content container-sm">
+			<span>2021 </span><span>Cherkas Evgeni</span>
+		</div>
+	</footer>
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="./src/js/index.js"></script>
 </body>
 </html>

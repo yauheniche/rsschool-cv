@@ -16,31 +16,30 @@ burgerBtn.addEventListener('click', ()=> {
 })
 
 
-schedule.addEventListener('mousemove', (e)=> {
-
-  if (e.target === itIcon) itItemList.classList.add('active')
-  if (e.target === universityIcon) universityItemList.classList.add('active');
-  if (e.target === constructionIcon) constructionItemList.classList.add('active');
+// schedule.addEventListener('mousemove', (e)=> {
+//   if (e.target === itIcon) itItemList.classList.add('active')
+//   if (e.target === universityIcon) universityItemList.classList.add('active');
+//   if (e.target === constructionIcon) constructionItemList.classList.add('active');
   
-})
+// })
 
-list.addEventListener('mousemove', (e)=> {
+// list.addEventListener('mousemove', (e)=> {
 
-  if (e.target === itItemList) itIcon.classList.add('active')
-  if (e.target === universityItemList) universityIcon.classList.add('active');
-  if (e.target === constructionItemList) constructionIcon.classList.add('active');
+//   if (e.target === itItemList) itIcon.classList.add('active')
+//   if (e.target === universityItemList) universityIcon.classList.add('active');
+//   if (e.target === constructionItemList) constructionIcon.classList.add('active');
 
-})
+// })
 
-schedule.childNodes.forEach( (el)=> {
-  el.addEventListener('mouseleave', (e)=> {
+// schedule.childNodes.forEach( (el)=> {
+//   el.addEventListener('mouseleave', (e)=> {
 
-    if (e.target === itIcon.parentNode) itItemList.classList.remove('active');
-    if (e.target === universityIcon) universityItemList.classList.remove('active');
-    if (e.target === constructionIcon) constructionItemList.classList.remove('active');
+//     if (e.target === itIcon.parentNode) itItemList.classList.remove('active');
+//     if (e.target === universityIcon) universityItemList.classList.remove('active');
+//     if (e.target === constructionIcon) constructionItemList.classList.remove('active');
   
-  })
-})
+//   })
+// })
 
 list.childNodes.forEach( (el)=> {
   el.addEventListener('mouseleave', (e)=> {
@@ -52,10 +51,9 @@ list.childNodes.forEach( (el)=> {
   });
 })
 
+console.log(`
 
-
-
-
+`)
 const swiper = new Swiper('.swiper-container', {
   effect: 'coverflow',
   grabCursor: true,

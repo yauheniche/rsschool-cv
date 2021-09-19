@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  min-width: 350px;
+  min-width: 320px;
 }
 
 .header .navbar{
@@ -78,6 +78,12 @@ body {
   }
 }
 
+@media (min-width: 576px) {
+    .navigation-mobile {
+        display: none;
+    }
+}
+
 /* header teaser */
 
 .profile-teaser {
@@ -119,9 +125,11 @@ body {
 /* experience */
 
 .experience,
-.portfolio {
+.portfolio,
+.code-example {
   padding-top: 1rem;
   padding-bottom: 1rem;
+  overflow: hidden;
 }
 
 /* educational schedule */
@@ -135,7 +143,6 @@ body {
 .schedule {
   display: flex;
   justify-content: space-between;
-  font-size: 9rem;
   color: skyblue;
   margin-bottom: 2rem;
 }
@@ -143,90 +150,37 @@ body {
 .schedule__stage,
 .schedule__arrow {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex: 2;
 }
 
 .schedule__stage {
-  width: 20%;
-  cursor: pointer;
-  transition: color .3s;
-}
-.schedule__stage:last-child {
-  font-size: 13rem;
-  margin-left:1.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: color .3s;
+    flex: 3;
 }
 
 .schedule__stage:hover {
   color: #008cba;
 }
 
-@media (max-width: 992px) {
-  .schedule__stage {
-    font-size: 9rem;
-  }
-  .schedule{
-    margin-right: 2rem;
-  }
-
-  .schedule__arrow {
-    font-size: 8rem;
-  }
-  .schedule__stage:last-child {
-    margin-left: 2.5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .schedule {
-    justify-content: center;
-  }
-  .schedule__stage {
-    font-size: 7.5rem;
-  }
-
-  .schedule__arrow {
-    font-size: 5.5rem;
-  }
-  .schedule__stage:last-child {
-    font-size: 9rem;
-    margin-left:1.5rem;
-  }
-}
-@media (max-width: 576px) {
-
-  .experience__title,
-  .portfolio__title {
-    text-align: center;
-  }
-
-  .schedule {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 0;
-
-    /* to not to show vertical schedule */
-
-    display: none 
-  }
-  .schedule__arrow {
-    font-size: 3rem;
-    transform: rotate(90deg);
-  }
-  .schedule__stage {
-    font-size: 5rem;
-  }
-  .schedule__stage:last-child {
-    margin-left:0;
-  }
-}
-
 /* educational list */
 
-.link__description {
+.description__up{
   position: relative;
   bottom: 7px;
+}
+
+.list-description {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-description li {
+    padding-right: 4px;
 }
 
 .list-group-item:last-child {
@@ -237,13 +191,12 @@ body {
   background-color: #f8f9fa;
 }
 
-.list-group-item__title,
-.list-group-item__row {
+.list-group-item__title {
   padding: 0 1.25rem;
 }
 
-.list-group-item__title {
-  margin-bottom: 0.5rem;
+.list-group-item__row {
+    padding: 0.5rem 1.25rem 0;
 }
 
 .list-group-item__row:hover {
@@ -282,6 +235,25 @@ body {
   animation: opacity 1.5s;
 }
 
+.list-group-item__content {
+    max-height: 0;
+    transition: all .5s;
+    overflow: hidden;
+}
+.item-expand {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.item-expand:hover .list-group-item__content {
+    max-height: 400px;
+    height: auto;
+}
+
+.text-muted {
+    white-space: nowrap;
+}
+
 .schedule .active {
   color: #008cba;
 } 
@@ -315,9 +287,11 @@ body {
 }
 
 .swiper-slide__image {
-  height: 200px; 
+  height: initial;
+  max-height: 300px; 
   width: 100%; 
   display: block;
+  object-fit: contain;
   filter: blur(10px);
   transition: all 0.2s;
 }
@@ -328,6 +302,7 @@ body {
 
 .card-body {
   background-color: #f0f8ff;
+  min-height: 90px;
 }
 
 
@@ -344,6 +319,7 @@ body {
 
 .description__text {
   margin: 1rem;
+  white-space: initial;
 }
 
 .card-navigator {
@@ -377,4 +353,26 @@ body {
 .contacts .links-navbar__item:hover {
   background-color: #f0f8ff;
   border-radius: 50%;
+  display: flex;
+}
+
+.footer {
+    background: skyblue;
+    padding: 1rem;
+    color: white;
+}
+
+.footer-content {
+    padding-left: 0;
+}
+
+.code-container {
+    white-space: pre-line;
+    margin-bottom: 0;
+    font-size: 10px;
+    overflow: hidden;
+}
+
+.code-contant {
+    height: 100%;
 }
