@@ -376,3 +376,9 @@ body {
 .code-contant {
     height: 100%;
 }
+
+.footer-link,
+.footer-link:hover {
+	color: white;
+	text-decoration: none;
+}
